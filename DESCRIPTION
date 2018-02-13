@@ -1,13 +1,13 @@
 Package: mopa
 Depends: R (>= 3.4.0), raster, sp
 Imports: splancs, spam, spatstat, sampling, dismo, rpart, tree, e1071,
-        earth, randomForest, PresenceAbsence, lattice, gtools, ranger,
-        abind,
+        earth, randomForest, PresenceAbsence, lattice, graphics,
+        grDevices, gtools, ranger, abind,
 Suggests: rJava (>= 0.5-0), caret (>= 6.0-76)
 Type: Package
 Title: Species Distribution MOdeling with Pseudo-Absences
-Version: 1.0.0
-Date: 2017-06-05
+Version: 1.0.1
+Date: 2018-02-12
 Authors@R: c(person("Maialen", "Iturbide", role = c("aut", "cre"), email = "miturbide@ifca.unican.es"),
               person("Joaquin", "Bedia", role = "ctb"),
               person("SantanderMetGroup", "http://meteo.unican.es", role = "ctb"))
@@ -29,9 +29,9 @@ LazyLoad: true
 RoxygenNote: 6.0.1
 Maintainer: Maialen Iturbide <miturbide@ifca.unican.es>
 NeedsCompilation: no
-Packaged: 2017-06-06 15:03:35 UTC; maialen
+Packaged: 2018-02-13 17:16:49 UTC; maialen
 Author: Maialen Iturbide [aut, cre],
   Joaquin Bedia [ctb],
   SantanderMetGroup http://meteo.unican.es [ctb]
 Repository: CRAN
-Date/Publication: 2017-06-06 15:40:42 UTC
+Date/Publication: 2018-02-13 17:29:50 UTC

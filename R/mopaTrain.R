@@ -138,7 +138,7 @@ mopaTrain <- function(y,
                               threshold = threshold,
                               diagrams = diagrams,
                               tuneRF.args = tuneRF.args,
-                              plotnames = paste0(names(y)[j], " PAralization ", i))
+                              plotnames = paste0(names(y)[j], " PArealization ", i))
           if(l < 10){
             nm[l] <- paste0("0", l)
           }else{

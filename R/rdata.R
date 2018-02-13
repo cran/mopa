@@ -64,7 +64,7 @@ NULL
 #' 
 #' ## Considering an unique background extent
 #' 
-#' #' RS_random <-pseudoAbsences(xy = presences, background = bg$xy, 
+#' RS_random <-pseudoAbsences(xy = presences, background = bg$xy, 
 #'                            realizations = 5,
 #'                            exclusion.buffer = 0.083*5, prevalence = -0.5, kmeans = FALSE)
 #' 

@@ -25,7 +25,7 @@
 #' variance (V) can be decomposed as the summation of the variance explained by component1 (Vcomp1), 
 #' component2 (Vcomp2) and the combination of the previous two (Vcomp12):
 #' 
-#' \eqn{V = Vcomp1 + Vcomp2 + Vcomp2}.
+#' \eqn{V = Vcomp1 + Vcomp2 + Vcomp12}.
 #' 
 #' Description of the components:
 #' \itemize{
@@ -71,7 +71,7 @@
 #' prdRS.fut <- mopaPredict(models = mods, newClim = newClim)
 #' result <- varianceAnalysis(prdRS.fut, "PA", "newClim")
 #' spplot(result$variance, col.regions = rev(get_col_regions()))
-#' 
+#' @seealso \code{\link[mopa]{varianceSummary}}
 #' @export
 #' @importFrom stats sd
 

@@ -42,7 +42,7 @@ in \code{predictions} is here assessed using a simple analysis of variance appro
 variance (V) can be decomposed as the summation of the variance explained by component1 (Vcomp1), 
 component2 (Vcomp2) and the combination of the previous two (Vcomp12):
 
-\eqn{V = Vcomp1 + Vcomp2 + Vcomp2}.
+\eqn{V = Vcomp1 + Vcomp2 + Vcomp12}.
 
 Description of the components:
 \itemize{
@@ -75,12 +75,14 @@ crop(biostack$future[[x]], extent(-10, 5, 35, 60))
 prdRS.fut <- mopaPredict(models = mods, newClim = newClim)
 result <- varianceAnalysis(prdRS.fut, "PA", "newClim")
 spplot(result$variance, col.regions = rev(get_col_regions()))
-
 }
 \references{
 San Martin, D., Manzanas, R., Brands, S., Herrera, S., & Gutierrez, J.M. (2016) Reassessing 
 Model Uncertainty for Regional Projections of Precipitation with an Ensemble of Statistical Downscaling Methods. 
 Journal of Climate 30, 203-223.
+}
+\seealso{
+\code{\link[mopa]{varianceSummary}}
 }
 \author{
 M. Iturbide
